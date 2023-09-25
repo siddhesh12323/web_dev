@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My First Website</title>
+		<link rel = "icon" type = "image/jpg" href = "images/kitler.jpg">
+	</head>
+	<body>
+		<header style="background-color: blanchedalmond;">
+			<h1>Heading 1</h1>
+			<a href="">Home</a>
+			<a href="index2.html">CSS</a>
+			<a href="lyrics.html">Lyrics</a>
+		</header>
+		<hr>
+		<main>
+		<a href = "https://google.com/" target = "_blank" title = "Goes to google">
+			Go To Google
+		</a>
+		<hr>
+		<a href = "lyrics.html" title = "Check lyrics">
+			Check lyrics
+		</a>
+		<hr>
+		<video width = "300px" height = "200px" controls>
+			<source src = "videos/recording1.mp4">
+			</source>	
+		</video>
+		<hr>
+		<p>
+			<p><strong>Strong</strong></p>
+			<p><em>Emphasized</em></p>
+			<p><mark>Marked</mark></p>
+			<p><small>Small</small></p>
+			<p><del>Deleted</del></p>
+			<p><ins>Inserted</ins></p>
+			<p><sub>Subscript</sub></p>
+			<p><tt>Monospace</tt></p>
+			<p><big>Big</big></p>
+		<p><sup>Superscript</sup></p>
+		</p>
+		<hr>
+		<h1><span style = "background-color: red;">This is a span</span></h1>
+		<h1><div style="background-color: tomato;">This is a div</div></h1>
+		<hr>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias mollitia necessitatibus harum ipsa dolore accusantium voluptas vero laboriosam assumenda id numquam, repellat consequatur ea vel minima?<span style="background-color: tomato;"> Sapiente explicabo esse aliquam!</span></p>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, totam reprehenderit?<div style="background-color: cyan;"> Recusandae rem error voluptatem dolorum voluptatibus culpa. Hic culpa odit atque repellendus neque voluptatem facere ab quo enim nobis!</div></p>
+		<hr>
+		<h4>An unordered list</h4>
+		<ul>
+			<li>Play</li>
+			<li>Work</li>
+			<li>Sleep</li>
+			<li>Eat</li>
+		</ul>
+		<hr>
+		<h4>An ordered list</h4>
+		<ol>
+			<li>Wake</li>
+			<li>Eat</li>
+			<li>Go to class</li>
+			<li>Study</li>
+
+		</ol>
+		<hr>
+		<h4>A definition list</h4>
+		<dl>
+			<dt>HTML</dt>
+			<dd>Hyper Text Markup Language</dd>
+			<dt>CSS</dt>
+			<dd>Cascading Style Sheets</dd>
+			<dt>JS</dt>
+			<dd>JavaScript</dd>
+		<hr>
+		<h4>Item Prices</h4>
+		<table border="1" style="background-color: black;">
+			<tr align="center" style="background-color: cyan;">
+				<th style="width: 100;">Item</th>
+				<th style="width: 100;" >Price</th>
+				<th style="width: 100;" >Quantity</th>
+			</tr>
+			<tr align="center" style="background-color: aliceblue;">
+				<td>Item 1</td>
+				<td>100</td>
+				<td>10</td>
+			</tr>
+			<tr align="center" style="background-color: aliceblue;">
+				<td>Item 2</td>
+				<td>200</td>
+				<td>20</td>
+			</tr>
+			<tr align="center" style="background-color: aliceblue;">
+				<td>Item 3</td>
+				<td>300</td>
+				<td>30</td>
+			</tr>
+		</table>
+		<hr>
+		<h3>Form</h3>
+		<form action="index.php" method="POST" enctype="multipart/form-data">
+			<label for="username">username:</label>
+			<input type="text" name="username" id="username" minlength="6" maxlength="15" placeholder="Enter username" required>
+			<br><br>
+			<label for="email">e-mail:</label>
+			<input type="email" name="email" id="email" minlength="6" placeholder="Enter e-mail" required>
+			<br><br>
+			<label for="password">password:</label>
+			<input type="password" name="password" id="password" minlength="6" maxlength="15" placeholder="Enter password"
+				required>
+			<br><br>
+			<label for="phone">phone:</label>
+			<input type="tel" name="phone" id="phone" minlength="6" maxlength="15" placeholder="Enter phone number"
+				pattern="[0-9]{10}" required>
+			<br><br>
+			<label for="date">birth date:</label>
+			<input type="date" name="date" id="date" placeholder="Enter birth date" required>
+			<br><br>
+			<label for="quantity">items count:</label>
+			<input type="number" min="0" max="99" value="1" name="quantity" id="quantity" placeholder="Enter number of items"
+				required>
+			<br><br>
+			<input type="radio" name="title" id="title" value="Mr." checked>
+			<label for="title">Mr.</label>
+			<input type="radio" name="title" id="title" value="Mr.">
+			<label for="title">Mrs.</label>
+			<br><br>
+			<label for="payment method">payment method:</label>
+			<select id="payment method">
+				<option value="UPI">UPI</option>
+				<option value="Debit Card">Debit Card</option>
+				<option value="Netbanking">Netbanking</option>
+				<option value="EMI">EMI</option>
+			</select>
+			<br><br>
+			<label for="file">upload image:</label>
+			<input type="file" id="file" accept="image/png, image/jpeg">
+			<br><br>
+			<label for="something">type something i guess:</label>
+			<textarea rows="2" cols="5" id="something"></textarea>
+			<br><br>
+			<input type="checkbox" id="newsletter" checked>
+			<label for="newsletter">Subscribe to the newsletter for regular updates (i will not spam you, trust me)</label>
+			<br><br>
+			<input type="submit" value="Submit">
+			<input type="reset" value="Reset">
+		</form>
+		<hr>
+		<div>
+		<button onclick="doSomething()" style="background-color: beige; font-size: 22px; border-radius: 15px;">
+			Click Me for Alert
+		</button>
+		<script>
+			function doSomething(){
+				alert("Hello World");
+			}
+		</script>
+		<a href="lyrics.html" title="Go to lyrics page">
+		 <button style="background-color: beige; font-size: 22px; border-radius: 15px;">
+			Go to lyrics page
+		</button>
+		</a>
+		<button onclick="showImage()" style="background-color: beige; font-size: 22px; border-radius: 15px;">
+			Show an image
+		</button>
+		<script>
+			let count = 0;
+			function showImage() {
+				count++;
+				if(count % 2 == 0)
+					document.getElementById("reverse_flash").innerHTML = "";
+				else
+				document.getElementById("reverse_flash").innerHTML = `<img src = 'images/reverse_flash.jpeg' alt = 'An image of cat' height = '200'>`;
+			}
+			console.log(count);
+		</script>
+		</div>
+		<hr>
+		<img src = "images/cat.jpg" alt = "An image of cat" height = "200">
+		<div id="reverse_flash"></div>
+	</main>
+	<footer>
+		<hr>
+		&copy;Siddhesh Kumbhar<br>
+		<a href="https://twitter.com/siddheshk_dev" target="_blank">@siddheshk_dev</a>
+	</footer>
+	</body>
+</html>
+
+<!--59:00-->
