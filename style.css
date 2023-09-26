@@ -12,6 +12,22 @@ body {
     background-color: black;
 }
 
+.widthheightparent {
+    height: 20vh;
+    color: white;
+}
+
+.widthheight {
+    border: 2px solid white;
+    box-sizing: border-box;
+    margin-top: 10px;
+    height: auto;
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding: 50px;
+}
+
 h1 {
     color: rgb(0, 255, 0);
     font-family: verdana, arial;
@@ -23,25 +39,71 @@ h1 {
     text-shadow: 3px 3px 3px red, -3px -3px 3px rgb(29, 29, 249);
 }
 
-p {
-    color: rgb(151, 238, 151);
-    border-top: 2px solid red; /*border-width, border-style color*/
-    border-left: 2px solid yellow;
-    border-right: 2px double green;
-    border-bottom: 2px solid magenta;
+#reverseflashdiv {
+border: 2px solid white;
+margin-top: 10px;
+display: flow-root;
 }
-/* #p1 {
+
+#kitler {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#reverseflash {
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#overflowtest {
+    margin-top: 10px;
+    height: 200px;
+    border: 2px solid white;
+    overflow: auto;
+}
+
+.text1 {
+    color: rgb(151, 238, 151);
+}
+
+.text2 {
+    color: white;
+}
+
+ #p1 {
     color: rgb(255, 0, 0);
+    border-top: 2px solid red;
+        /*border-width, border-style color*/
+        border-left: 2px solid yellow;
+        border-right: 2px double green;
+        border-bottom: 2px solid magenta;
 }
 #p2 {
     color: rgb(0, 0, 255);
+    border-top: 2px solid red;
+        /*border-width, border-style color*/
+        border-left: 2px solid yellow;
+        border-right: 2px double green;
+        border-bottom: 2px solid magenta;
 }
 #p3 {
     color: rgb(255, 255, 0);
+    border-top: 2px solid red;
+        /*border-width, border-style color*/
+        border-left: 2px solid yellow;
+        border-right: 2px double green;
+        border-bottom: 2px solid magenta;
 }
 #p4 {
     color: rgb(255, 0, 255);
-} */
+    border-top: 2px solid red;
+        /*border-width, border-style color*/
+        border-left: 2px solid yellow;
+        border-right: 2px double green;
+        border-bottom: 2px solid magenta;
+} 
 .odd {
     color: rgb(255, 255, 255);
     font-family:Montserrat, sans-serif;
