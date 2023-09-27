@@ -8,6 +8,36 @@
     src: url(fonts/Mooli-Regular.ttf);
 }
 
+/* combinators
+  = descendant
+> = child
+~ = sibling
++ = adjacent sibling */
+
+#combinators {
+    border: 2px solid white;
+}
+
+#combinators p{
+    background-color: blue;
+}
+
+#combinators > p {
+    background-color: red;
+}
+
+#combinators div + p{
+    background-color: green;
+}
+
+#index3-body {
+    background-image: url(images/flash_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+}
+
 body {
     background-color: black;
 }
