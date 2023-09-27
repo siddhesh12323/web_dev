@@ -30,6 +30,66 @@
     background-color: green;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    font-size: 1.02em;
+    color: blue;
+}
+
+a:active {
+    color: yellow;
+}
+
+li:hover {
+    background-color: red;
+}
+
+li:nth-child(odd) {
+    background-color: green;
+}
+
+.text1::first-letter {
+    font-size: 2em;
+    color: red;
+}
+
+p::selection {
+    background-color: white;
+    color: black;
+}
+
+li::marker {
+    content: '> ';
+}
+
+.pagination {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.pagination a {
+    color: white;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: rgb(132, 140, 139);
+    color: white;
+    border-radius: 5px;
+}
+
 #index3-body {
     background-image: url(images/flash_background.jpg);
     background-repeat: no-repeat;
